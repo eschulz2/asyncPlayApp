@@ -7,6 +7,7 @@ request({
   if (error) {
   	console.log('Unable to fetch weather information.');
   } else {
-  	console.log(JSON.stringify(body, null, 4));//4 number of spaces
+  	console.log('It\'s ' + body.main.temp + ' F in ' + body.name + '!');
+
   }
 });
